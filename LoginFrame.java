@@ -97,7 +97,11 @@ public class LoginFrame extends JFrame implements ActionListener {
 
 
     }
-    
+
+    /**
+     * Metode que realitza l'accio d'autenticar quan es prem el boto del JFrame.
+     * @param event conte el tipus d'event que es realitzara al programa.
+     */
        public void actionPerformed(ActionEvent event)
     {
         Object source = event.getSource();
@@ -111,7 +115,10 @@ public class LoginFrame extends JFrame implements ActionListener {
             		System.exit(0);
         }
     }
-        
+    /**
+     * classe que realitza el metode d'autenticacio per base de dades. Per a poder funcionar
+     * correctament s'han d'haver definit les variables loginname i loginpass descrites anteriorment.
+     */
         public void login()
         {
         	loginname = userTxt.getText().trim();
@@ -164,11 +171,17 @@ public class LoginFrame extends JFrame implements ActionListener {
           	}		
     }
 
+    /**
+     *Metode que descriu si un usuari ha fet login o no.
+     * @return boolean Valors true si ha fet login o false si no ha pogut fer login al programa.
+     */
     public boolean isLogged(){
         return !loginname.isEmpty() && !loginpass.isEmpty();
     }
-    
-    
+    /**
+    * Aquest metode es l'inicial del projecte PayRoll i serveix per inicialitzar tot el programa.
+    * @param args Aquest parametre no s'empra a dins el projecte.
+    */
     public static void main(String[] args)
     {
         
