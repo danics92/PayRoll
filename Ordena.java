@@ -10,6 +10,4 @@ public class Ordena {
         com.esliceu.sort.Sort s = new com.esliceu.sort.Sort();
         System.out.print(Arrays.toString(s.BubbleSort(ar)));
     }
-
-
 }
