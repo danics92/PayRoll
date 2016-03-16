@@ -9,6 +9,7 @@ public class Ordena {
         int[] ar = { -2147483648,0,2147483647};
         com.esliceu.sort.Sort s = new com.esliceu.sort.Sort();
         System.out.print(Arrays.toString(s.BubbleSort(ar)));
+
     }
 
 
